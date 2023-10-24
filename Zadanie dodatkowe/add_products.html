@@ -1,0 +1,122 @@
+<html lang="pl">
+
+    <head>
+        <title>Strona Internetowa</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Zadanie dodatkowe">
+        <meta name="author" content="Adrian Tokarski">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+
+
+    <body>
+
+        <nav>
+
+            <ul>
+
+                <li><a href="add_products.html">Dodawanie produktów</a></li>
+                <li><a href="add_customers.html">Dodawanie klientów</a></li>
+                <li><a href="add_employees.html">Dodawanie pracowników</a></li>
+                
+            </ul>
+
+        </nav>
+
+
+        
+
+        <section class="add_product_form">
+
+            <p>Dodawanie produktu</p>
+
+            <form action="add_product.php" method="POST">
+
+                <label for="nazwa">Nazwa produktu</label>
+                <br>
+                <input type="text" id="nazwa" name="nazwa">
+
+                <br><br>
+
+                <label for="opis">Opis produktu</label>
+                <br>
+                <input type="text" id="opis" name="opis">
+
+                <br><br>
+
+                <label for="cena">Cena produktu</label>
+                <br>
+                <input type="number" id="cena" name="cena">
+
+                <br><br>
+
+                <label for="dostepnosc">Liczba dostępnych sztuk</label>
+                <br>
+                <input type="number" id="dostepnosc" name="dostepnosc">
+
+                <br><br>
+
+                <input type="submit" id="submit" name="submit" value="Zatwierdź">
+                <input type="reset" id="reset" name="reset" value="Wyczyść">
+
+
+            </form>
+        </section>
+        
+        
+
+        <section class="edit_product_form">
+
+            <p>Edytowanie produktu</p>
+
+            <form action="edit_product.php" method="POST">
+
+                <label for="id">Podaj ID produktu, który chcesz zedytować</label>
+                <br>
+                <input type="number" id="id" nazwa="id">
+
+                <br><br>
+
+                <label for="nazwa">Nazwa produktu</label>
+                <br>
+                <input type="text" id="nazwa" name="nazwa">
+
+                <br><br>
+
+                <label for="opis">Opis produktu</label>
+                <br>
+                <input type="text" id="opis" name="opis">
+
+                <br><br>
+
+                <label for="cena">Cena produktu</label>
+                <br>
+                <input type="number" id="cena" name="cena">
+
+                <br><br>
+
+                <label for="dostepnosc">Liczba dostępnych sztuk</label>
+                <br>
+                <input type="number" id="dostepnosc" name="dostepnosc">
+
+                <br><br>
+
+                <input type="submit" id="submit" name="submit" value="Zatwierdź">
+                <input type="reset" id="reset" name="reset" value="Wyczyść">
+
+                
+
+
+            </form>
+
+        </section>
+
+
+    </body>
+
+
+
+
+
+</html>
