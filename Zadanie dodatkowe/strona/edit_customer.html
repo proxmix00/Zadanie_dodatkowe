@@ -1,0 +1,136 @@
+<html lang="pl">
+
+    <head>
+        <title>Strona Internetowa</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Zadanie dodatkowe">
+        <meta name="author" content="Adrian Tokarski">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+
+
+    <body>
+
+        <nav class="menu">    
+            <a href="index.html">Strona Główna</a>
+
+            <div class="dropdown">
+            <a href="#">Edycja produktów</a>
+                <ul>
+                    <li><a href="add_products.html">Dodawanie produktów</a></li>
+                    <li><a href="edit_products.html">Edytowanie produktów</a></li>
+                    <li><a href="delete_products.html">Usuwanie produktów</a></li>
+                    <li><a href="view_products.html">Przeglądanie produktów</a></li>
+                </ul>
+            </div>
+
+
+            <div class="dropdown">
+                <a href="#">Edycja klientów</a>
+                    <ul>
+                        <li><a href="add_customers.html">Dodawanie klientów</a></li>
+                        <li><a href="edit_customer.html">Edytowanie klientów</a></li>
+                        <li><a href="delete_customer.html">Usuwanie klientów</a></li>
+                        <li><a href="view_customers.html">Przeglądanie klientów</a></li>
+                    </ul>
+
+            </div>
+
+
+            <div class="dropdown">
+
+                <a href="#">Edycja pracowników</a>
+                    <ul>
+                        <li><a href="add_employee.html">Dodawanie pracowników</a></li>
+                        <li><a href="edit_employee.html">Edytowanie pracowników</a></li>
+                        <li><a href="delete_employee.html">Usuwanie pracowników</a></li>
+                        <li><a href="view_employee.html">Przeglądanie pracowników</a></li>
+                    </ul>
+
+            </div>
+
+        </nav>
+
+
+        <section class="edit_customers_form">
+
+            <p>Edytowanie klienta</p>
+
+            <form action="edit_customers.php" method="POST">
+
+
+                <label for="id">Podaj ID klienta, którego chcesz edytować</label>
+                <br>
+                <input type="number" id="id" name="id">
+
+                <br><br>
+
+                <label for="imie">Imię</label>
+                <br>
+                <input type="text" id="imie" name="imie">
+
+                <br><br>
+
+                <label for="nazwisko">Nazwisko</label>
+                <br>
+                <input type="text" id="nazwisko" name="nazwisko">
+
+                <br><br>
+
+                <label for="ulica">Ulica</label>
+                <br>
+                <input type="text" id="ulica" name="ulica">
+
+                <br><br>
+
+                <label for="Nr_budynku">Numer budynku</label>
+                <br>
+                <input type="text" id="Nr_budynku" name="Nr_budynku">
+
+                <br><br>
+
+                <label for="Miasto">Miasto</label>
+                <br>
+                <input type="text" id="Miasto" name="Miasto">
+
+                <br><br>
+
+
+                <label for="email">E-mail</label>
+                <br>
+                <input type="text" id="email" name="email">
+
+                <br><br>
+
+                <label for="nr_telefonu">Numer telefonu</label>
+                <br>
+                <input type="number" id="nr_telefonu" name="nr_telefonu">
+
+                <br><br>
+
+
+                <input type="submit" id="submit" name="submit" value="Zatwierdź">
+                <input type="reset" id="reset" name="reset" value="Wyczyść"> 
+
+
+
+
+            </form>
+
+
+
+
+
+        </section>
+
+        
+
+
+    </body>
+
+
+
+
+
+</html>

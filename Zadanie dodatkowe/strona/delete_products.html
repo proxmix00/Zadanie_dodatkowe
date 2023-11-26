@@ -1,0 +1,78 @@
+<html lang="pl">
+
+    <head>
+        <title>Strona Internetowa</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Zadanie dodatkowe">
+        <meta name="author" content="Adrian Tokarski">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+
+
+    <body>
+
+        <nav class="menu">    
+            <a href="index.html">Strona Główna</a>
+
+            <div class="dropdown">
+            <a href="#">Edycja produktów</a>
+                <ul>
+                    <li><a href="add_products.html">Dodawanie produktów</a></li>
+                    <li><a href="edit_products.html">Edytowanie produktów</a></li>
+                    <li><a href="delete_products.html">Usuwanie produktów</a></li>
+                    <li><a href="view_products.html">Przeglądanie produktów</a></li>
+                </ul>
+            </div>
+
+
+            <div class="dropdown">
+                <a href="#">Edycja klientów</a>
+                    <ul>
+                        <li><a href="add_customers.html">Dodawanie klientów</a></li>
+                        <li><a href="edit_customer.html">Edytowanie klientów</a></li>
+                        <li><a href="delete_customer.html">Usuwanie klientów</a></li>
+                        <li><a href="view_customers.html">Przeglądanie klientów</a></li>
+                    </ul>
+
+            </div>
+
+
+            <div class="dropdown">
+
+                <a href="#">Edycja pracowników</a>
+                    <ul>
+                        <li><a href="add_employee.html">Dodawanie pracowników</a></li>
+                        <li><a href="edit_employee.html">Edytowanie pracowników</a></li>
+                        <li><a href="delete_employee.html">Usuwanie pracowników</a></li>
+                        <li><a href="view_employee.html">Przeglądanie pracowników</a></li>
+                    </ul>
+
+            </div>
+
+        </nav>
+
+
+
+        <section class="delete_product_form">
+
+            <p>Usuwanie produktu</p>
+
+            <form action="delete_products.php" method="POST">
+
+                <label for="id_produktu">Podaj ID produktu, który chcesz usunąć</label>
+                <br>
+                <input type="number" id="id_produktu" name="id_produktu">
+
+                <input type="submit" id="submit" name="submit" value="Zatwierdź">
+                <input type="reset" id="reset" name="reset" value="Wyczyść">
+
+            </form>
+
+
+        </section>
+
+
+    </body>
+
+</html>
