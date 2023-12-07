@@ -14,10 +14,10 @@ $nr_telefonu = $_POST['nr_telefonu'];
 
 if(isset($_POST['submit'])){
 
-$db = mysqli_connect('localhost','root','','erpdatabase');
+    $db = mysqli_connect('localhost','root','','erpdatabase');
 
 
-$query = "Update customers set 
+    $query = "Update customers set 
           imię = '$imie',
           Nazwisko = '$nazwisko',
           Ulica = '$ulica',
@@ -27,11 +27,22 @@ $query = "Update customers set
           nr_telefonu = $nr_telefonu
           where ID = $id";
 
-$result = mysqli_query($db,$query);
+    $result = mysqli_query($db,$query);
 
-mysqli_close($db);
 
-Echo "Zedytowano klienta";
+    $date = date("Y-m-d H:i:s");
+
+
+
+    $action = "insert into employeesactions values (null,'Edycja klienta','$date')";
+    $actionresult = mysqli_query($db,$action);
+
+
+    mysqli_close($db);
+
+    Echo "Zedytowano klienta";
+    Echo "<br><br>";
+    Echo '<a href="edit_customer.html">Powrót do strony</a>';
 
 }
 

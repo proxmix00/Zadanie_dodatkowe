@@ -46,6 +46,7 @@
                         <li><a href="edit_employee.html">Edytowanie pracowników</a></li>
                         <li><a href="delete_employee.html">Usuwanie pracowników</a></li>
                         <li><a href="view_employee.html">Przeglądanie pracowników</a></li>
+                        <li><a href="view_history.php">Akcje pracowników</a></li>
                     </ul>
 
             </div>
@@ -53,7 +54,28 @@
         </nav>
 
 
-        
+        <section class="delete_employee_form">
+
+
+            <p>Usuwanie Pracownika</p>
+
+            <form action="delete_employee.php" method="POST">
+
+
+                <label for="id_pracownika">Podaj ID pracownika, którego chcesz usunąć</label>
+                <br>
+                <input type="number" id="id_pracownika" name="id_pracownika">
+                <br><br>
+                <input type="submit" id="submit" name="submit" value="Zatwierdź">
+                <input type="reset" id="reset" name="reset" value="Wyczyść">
+
+
+
+            </form>
+
+
+
+        </section>
 
         
 

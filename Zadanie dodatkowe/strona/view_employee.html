@@ -46,6 +46,7 @@
                         <li><a href="edit_employee.html">Edytowanie pracowników</a></li>
                         <li><a href="delete_employee.html">Usuwanie pracowników</a></li>
                         <li><a href="view_employee.html">Przeglądanie pracowników</a></li>
+                        <li><a href="view_history.php">Akcje pracowników</a></li>
                     </ul>
 
             </div>
@@ -54,7 +55,29 @@
 
 
         
+        <section class="view_employee_form">
 
+            <p>Przeglądanie pracowników</p>
+
+
+            <form action="view_employee.php" method="POST">
+
+
+                <label for="id_pracownika">Podaj ID pracownika, którego chcesz wyszukać</label>
+                <br>
+                <input type="text" id="id_pracownika" name="id_pracownika">
+                <br><br>
+                <input type="submit" id="submit" name="submit" value="Zatwierdź">
+                <input type="reset" id="reset" name="reset" value="Wyczyść">
+
+
+
+
+            </form>
+
+         
+
+        </section>
         
 
 

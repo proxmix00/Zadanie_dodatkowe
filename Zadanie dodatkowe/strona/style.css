@@ -1,6 +1,6 @@
 *{
     font-family: Bahnschrift, 'DIN Alternate', 'Franklin Gothic Medium', 'Nimbus Sans Narrow', sans-serif-condensed, sans-serif;
-    
+    background: #2745ec;
 }
 
 
@@ -12,7 +12,7 @@
     top: 0;
     left: 0;
     padding: 0 2rem;
-    background: #1F2232;
+    background: #3850da;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -26,11 +26,13 @@
     text-decoration: none;
     padding: 1rem .5rem ;
     color: white;
+    background: #3850da;
 }
 
 
 .dropdown {
     position: relative;
+    background: #3850da;
 }
 
 
@@ -50,6 +52,7 @@
 
 .dropdown ul li{ 
     padding: .3rem; 
+    background: #3850da;
 }
 
 .dropdown ul li a{
@@ -71,33 +74,75 @@
     display: block;
 }
 
+label{
+
+    background: #c4caee;
+    margin-left: 150px;
+
+}
+
+input{
+    background: #cdd1e6;
+    margin-left: 150px;
+}
+
+#reset{
+
+    margin-left: 15px;
+    background: rgb(158, 42, 42);
+
+}
+
+#submit{
+
+    background: rgb(57, 165, 57);
+
+
+}
+
+#submit, #reset{
+
+    border-radius: 5px;
+    padding:5px;
+    
+}
+
+form{
+    background: #c4caee;
+}
 
 .add_product_form{
     border: solid 1px black;
-    width:10%;
-    float: left;
-    margin-left: 150px;
+    border-radius: 10px;
+    width:30%;
+    float: center;
+    margin:auto;
     margin-top: 100px;
     position: flex;
+    background: #c4caee;
     
 }
 
 
 .add_product_form p{
-
+    
     font-size: 150%;
     text-align: center;
-
+    background: #c4caee;
+    
 }
+
 
 
 .edit_product_form{
     border: solid 1px black;
-    width: 10%;
-    float: left;
-    margin-left: 150px;
+    border-radius: 10px;
+    width:30%;
+    float: center;
+    margin:auto;
     margin-top: 100px;
     position: flex;
+    background: #c4caee;
 }
 
 
@@ -105,34 +150,39 @@
     
     font-size: 150%;
     text-align: center;
-
+    background: #c4caee;
 }
 
 
 .delete_product_form{
     border: solid 1px black;
-    width:10%;
-    float: left;
-    margin-left: 150px;
-    margin-top: 70px;
+    border-radius: 10px;
+    width:30%;
+    float: center;
+    margin:auto;
+    margin-top: 100px;
     position: flex;
+    background: #c4caee;
     
 }
 
 .delete_product_form p{
     font-size: 150%;
     text-align: center;
+    background: #c4caee;
 }
 
 
 
 .view_products_form{
     border: solid 1px black;
-    width: 10%;
-    float: left;
-    margin-left: 150px;
+    border-radius: 10px;
+    width:30%;
+    float: center;
+    margin:auto;
     margin-top: 100px;
     position: flex;
+    background: #c4caee;
     
 }
 
@@ -141,18 +191,20 @@
     
     font-size: 150%;
     text-align: center;
-
+    background: #c4caee;
 }
 
 
 
 .add_customers_form{
     border: solid 1px black;
-    width: 10%;
-    float: left;
-    margin-left: 150px;
+    border-radius: 10px;
+    width:30%;
+    float: center;
+    margin:auto;
     margin-top: 100px;
     position: flex;
+    background: #c4caee;
     
 }
 
@@ -160,7 +212,7 @@
 .add_customers_form p{
     font-size: 150%;
     text-align: center;
-
+    background: #c4caee;
 }
 
 
@@ -168,11 +220,13 @@
 .edit_customers_form{
 
     border: solid 1px black;
-    width: 10%;
-    float: left;
-    margin-left: 150px;
+    border-radius: 10px;
+    width:30%;
+    float: center;
+    margin:auto;
     margin-top: 100px;
     position: flex;
+    background: #c4caee;
 }
 
 
@@ -180,18 +234,20 @@
 .edit_customers_form p{
     font-size: 150%;
     text-align: center;
-
+    background: #c4caee;
 }
 
 
 .delete_customers_form{
 
     border: solid 1px black;
-    width: 10%;
-    float: left;
-    margin-left: 150px;
+    border-radius: 10px;
+    width:30%;
+    float: center;
+    margin:auto;
     margin-top: 100px;
     position: flex;
+    background: #c4caee;
 
 }
 
@@ -200,17 +256,19 @@
 
     font-size: 150%;
     text-align: center;
-
+    background: #c4caee;
 }
 
 
 .view_customers_form{
     border: solid 1px black;
-    width: 10%;
-    float: left;
-    margin-left: 150px;
+    border-radius: 10px;
+    width:30%;
+    float: center;
+    margin:auto;
     margin-top: 100px;
     position: flex;
+    background: #c4caee;
 
 }
 
@@ -218,5 +276,87 @@
 .view_customers_form p{
     font-size: 150%;
     text-align: center;
+    background: #c4caee;
+}
 
+
+
+.add_employee_form{
+
+    border: solid 1px black;
+    border-radius: 10px;
+    width:30%;
+    float: center;
+    margin:auto;
+    margin-top: 100px;
+    position: flex;
+    background: #c4caee;
+}
+
+
+
+.add_employee_form p {
+    font-size: 150%;
+    text-align: center;
+    background: #c4caee;
+}
+
+
+.edit_employee_form{
+    
+    border: solid 1px black;
+    border-radius: 10px;
+    width:30%;
+    float: center;
+    margin:auto;
+    margin-top: 100px;
+    position: flex;
+    background: #c4caee;
+}
+
+
+.edit_employee_form p {
+    font-size: 150%;
+    text-align: center;
+    background: #c4caee;
+}
+
+
+.delete_employee_form{
+    border: solid 1px black;
+    border-radius: 10px;
+    width:30%;
+    float: center;
+    margin:auto;
+    margin-top: 100px;
+    position: flex;
+    background: #c4caee;
+}
+
+
+.delete_employee_form p{
+    font-size: 150%;
+    text-align: center;
+    background: #c4caee;
+}
+
+
+
+
+.view_employee_form{
+    border: solid 1px black;
+    border-radius: 10px;
+    width:30%;
+    float: center;
+    margin:auto;
+    margin-top: 100px;
+    position: flex;
+    background: #c4caee;
+}
+
+
+.view_employee_form p {
+    font-size: 150%;
+    text-align: center;
+    background: #c4caee;
 }

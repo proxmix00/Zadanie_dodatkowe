@@ -1,7 +1,7 @@
 
 <?php
 
-$id = $_POST['id_klienta'];
+$id = $_POST['id_pracownika'];
 
 
 if(isset($_POST['submit'])){
@@ -9,7 +9,7 @@ if(isset($_POST['submit'])){
     $db = mysqli_connect('localhost','root','','erpdatabase');
 
 
-    $query = "Select Imię, Nazwisko, Ulica, Numer_budynku, Miasto,email,nr_telefonu from customers where id = $id";
+    $query = "Select Imię, Nazwisko,Stanowisko,Wynagrodzenie,Ulica, numer_budynku, Miasto,nr_telefonu from employees where id = $id";
 
     $result = mysqli_query($db,$query);
 
@@ -23,6 +23,15 @@ if(isset($_POST['submit'])){
      Echo $row['Nazwisko'];
      Echo '<br>';
 
+     Echo 'Stanowisko:     ';
+     Echo $row['Stanowisko'];
+     Echo '<br>';
+
+
+     Echo 'Wynagrodzenie:     ';
+     Echo $row['Wynagrodzenie'];
+     Echo '<br>';
+
 
      Echo 'Ulica:     ';
      Echo $row['Ulica'];
@@ -31,7 +40,7 @@ if(isset($_POST['submit'])){
 
 
      Echo 'Numer budynku:     ';
-     Echo $row['Numer_budynku'];
+     Echo $row['numer_budynku'];
      Echo '<br>';
 
 
@@ -41,10 +50,7 @@ if(isset($_POST['submit'])){
      Echo '<br>';
 
 
-     Echo 'E-mail:     ';
-     Echo $row['email'];
-     Echo '<br>';
-
+     
 
      Echo 'Numer telefonu:     ';
      Echo $row['nr_telefonu'];
@@ -58,14 +64,14 @@ $date = date("Y-m-d H:i:s");
 
 
 
-$action = "insert into employeesactions values (null,'Wyświetlenie klientów ','$date')";
+$action = "insert into employeesactions values (null,'Wyświetlenie pracowników','$date')";
 $actionresult = mysqli_query($db,$action);
 
 mysqli_close($db);
 
 
 Echo "<br><br>";
-Echo '<a href="view_customers.html">Powrót do strony</a>';
+Echo '<a href="view_employee.html">Powrót do strony</a>';
 
 }
 

@@ -46,6 +46,7 @@
                         <li><a href="edit_employee.html">Edytowanie pracowników</a></li>
                         <li><a href="delete_employee.html">Usuwanie pracowników</a></li>
                         <li><a href="view_employee.html">Przeglądanie pracowników</a></li>
+                        <li><a href="view_history.php">Akcje pracowników</a></li>
                     </ul>
 
             </div>
@@ -54,7 +55,89 @@
 
 
         
+        <section class="edit_employee_form">
 
+            <p>Edytowanie pracownika</p>
+
+            <form action="edit_employee.php" method="POST">
+
+
+                <label for="id">Podaj ID pracownika, którego chcesz edytować</label>
+                <br>
+                <input type="number" id="id" name="id">
+
+                <br><br>
+
+                <label for="imie">Imię</label>
+                <br>
+                <input type="text" id="imie" name="imie">
+
+                <br><br>
+
+                <label for="nazwisko">Nazwisko</label>
+                <br>
+                <input type="text" id="nazwisko" name="nazwisko">
+
+                <br><br>
+
+                
+                <label for="stanowisko">Stanowisko</label>
+                <br>
+                <input type="text" id="stanowisko" name="stanowisko">
+
+                <br><br>
+
+
+                <label for="Wynagrodzenie">Wynagrodzenie</label>
+                <br>
+                <input type="text" id="Wynagrodzenie" name="Wynagrodzenie">
+
+                <br><br>
+
+                <label for="ulica">Ulica</label>
+                <br>
+                <input type="text" id="ulica" name="ulica">
+
+                <br><br>
+
+
+                <label for="Nr_budynku">Numer budynku</label>
+                <br>
+                <input type="text" id="Nr_budynku" name="Nr_budynku">
+
+                <br><br>
+
+    
+
+                <label for="Miasto">Miasto</label>
+                <br>
+                <input type="text" id="Miasto" name="Miasto">
+
+                <br><br>
+
+
+               
+
+                <label for="nr_telefonu">Numer telefonu</label>
+                <br>
+                <input type="number" id="nr_telefonu" name="nr_telefonu">
+
+                <br><br>
+
+
+                <input type="submit" id="submit" name="submit" value="Zatwierdź">
+                <input type="reset" id="reset" name="reset" value="Wyczyść"> 
+
+
+
+
+            </form>
+
+
+
+
+
+        </section>
         
 
 

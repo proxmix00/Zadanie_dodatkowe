@@ -24,10 +24,20 @@ if(isset($_POST['submit'])){
             
     
     $result = mysqli_query($db,$query);
+
+    $date = date("Y-m-d H:i:s");
+
+
+
+    $action = "insert into employeesactions values (null,'Edycja produktu','$date')";
+    $actionresult = mysqli_query($db,$action);
     
     mysqli_close($db);
     
     Echo "Zedytowano produkt";
+    Echo "<br><br>";
+    Echo '<a href="edit_products.html">Powrót do strony</a>';
+
     
     }
 

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Lis 26, 2023 at 03:45 PM
+-- Generation Time: Dec 07, 2023 at 05:16 PM
 -- Wersja serwera: 10.4.32-MariaDB
 -- Wersja PHP: 8.2.12
 
@@ -46,23 +46,9 @@ INSERT INTO `customers` (`ID`, `Imię`, `Nazwisko`, `Ulica`, `Numer_budynku`, `M
 (1, 'Marcin', 'Adamczewski', 'Długa', '8', 'Piła', 'marcinek123@wp.pl', 888222333),
 (2, 'Jakub', 'Tomaszewicz', 'Krótka', '44', 'Szydłowo', 'jakubson123@gmail.com', 543287932),
 (3, 'Kacper', 'Podgórski', 'Krzywa', '28', 'Piła', 'Kapi28@wp.pl', 965412231),
-(4, 'Adrian', 'Kowalewski', 'Waleczna', '12', 'Piła', 'adiadi215@gmail.com', 589254321),
 (5, 'Michał', 'Szukała', 'Długa', '12', 'Piła', 'Szukalamichal@wp.pl', 876545324),
-(9, 'Tomasz', 'Wysocki', 'Ogólna', '19', 'Piła', 'wysockitomek123@gmail.com', 922934545);
-
--- --------------------------------------------------------
-
---
--- Struktura tabeli dla tabeli `employeeactions`
---
-
-CREATE TABLE `employeeactions` (
-  `ID_akcji` int(11) NOT NULL,
-  `ID_Pracownika` int(11) DEFAULT NULL,
-  `typ_akcji` varchar(30) DEFAULT NULL,
-  `ID_produktu` int(11) DEFAULT NULL,
-  `ID_klienta` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci;
+(9, 'Tomasz', 'Wysocki', 'Ogólna', '19', 'Piła', 'wysockitomek123@gmail.com', 922934545),
+(12, 'Marian', 'Marianowski', 'Podłużna', '29', 'Wałcz', 'mariano123@wp.pl', 339922115);
 
 -- --------------------------------------------------------
 
@@ -87,11 +73,52 @@ CREATE TABLE `employees` (
 --
 
 INSERT INTO `employees` (`ID`, `Imię`, `Nazwisko`, `Stanowisko`, `Wynagrodzenie`, `Ulica`, `numer_budynku`, `Miasto`, `nr_telefonu`) VALUES
-(1, 'Wojtek', 'Wojtowicz', 'Sprzedawca', 4200, 'Poboczna', '29', 'Piła', 979656721),
-(2, 'Adam', 'Adamowicz', 'Sprzedawca', 4200, 'Kręta', '33', 'Dolaszewo', 899776564),
+(1, 'Wojtek', 'Machowski', 'Sprzedawca', 4200, 'Poboczna', '35', 'Piła', 979656721),
 (3, 'Jakub', 'Podhalski', 'Sprzątacz', 3800, 'Poboczna', '12', 'Piła', 464787939),
 (4, 'Dominik', 'Zielonka', 'Magazynier', 4800, 'Krótka', '11', 'Szydłowo', 717282945),
-(5, 'Maksymilian', 'Misiak', 'Dyrektor', 15000, 'Podłużna', '33', 'Kotuń', 294534132);
+(5, 'Maksymilian', 'Misiak', 'Dyrektor', 15000, 'Podłużna', '33', 'Kotuń', 294534132),
+(6, 'Marian', 'Kowalski', 'Sprzątacz', 3800, 'Krótka', '17', 'Szydłowo', 215965343);
+
+-- --------------------------------------------------------
+
+--
+-- Struktura tabeli dla tabeli `employeesactions`
+--
+
+CREATE TABLE `employeesactions` (
+  `id_akcji` int(11) NOT NULL,
+  `typ_akcji` varchar(45) DEFAULT NULL,
+  `data_akcji` datetime DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci;
+
+--
+-- Dumping data for table `employeesactions`
+--
+
+INSERT INTO `employeesactions` (`id_akcji`, `typ_akcji`, `data_akcji`) VALUES
+(1, 'Dodanie klienta', '0000-00-00 00:00:00'),
+(2, 'Dodanie klienta', '2023-12-07 00:00:00'),
+(3, 'Dodanie klienta', '2023-12-07 03:28:42'),
+(4, 'Dodanie klienta', '2023-12-07 03:30:05'),
+(5, 'Dodanie klienta', '2023-12-07 03:30:22'),
+(6, 'Dodanie klienta', '2023-12-07 03:30:49'),
+(7, 'Dodanie klienta', '2023-12-07 03:32:39'),
+(8, 'Dodanie klienta', '2023-12-07 16:59:28'),
+(9, 'Dodanie produktu', '2023-12-07 17:04:17'),
+(10, 'Edycja produktu', '2023-12-07 17:05:49'),
+(11, 'Usuwanie produktu', '2023-12-07 17:05:55'),
+(12, 'Wyświetlenie produktów', '2023-12-07 17:06:02'),
+(13, 'Wyświetlenie produktów', '2023-12-07 17:06:28'),
+(14, 'Usuwanie klienta', '2023-12-07 17:06:44'),
+(15, 'Usuwanie klienta', '2023-12-07 17:06:46'),
+(16, 'Usuwanie klienta', '2023-12-07 17:06:53'),
+(17, 'Usuwanie klienta', '2023-12-07 17:07:03'),
+(18, 'Usuwanie klienta', '2023-12-07 17:07:07'),
+(19, 'Usuwanie klienta', '2023-12-07 17:07:08'),
+(20, 'Usuwanie klienta', '2023-12-07 17:07:10'),
+(21, 'Wyświetlenie klientów ', '2023-12-07 17:07:19'),
+(22, 'Usuwanie klienta', '2023-12-07 17:07:25'),
+(23, 'Wyświetlenie pracowników', '2023-12-07 17:07:49');
 
 -- --------------------------------------------------------
 
@@ -141,19 +168,16 @@ ALTER TABLE `customers`
   ADD PRIMARY KEY (`ID`);
 
 --
--- Indeksy dla tabeli `employeeactions`
---
-ALTER TABLE `employeeactions`
-  ADD PRIMARY KEY (`ID_akcji`),
-  ADD KEY `ID_Pracownika` (`ID_Pracownika`),
-  ADD KEY `ID_produktu` (`ID_produktu`),
-  ADD KEY `ID_klienta` (`ID_klienta`);
-
---
 -- Indeksy dla tabeli `employees`
 --
 ALTER TABLE `employees`
   ADD PRIMARY KEY (`ID`);
+
+--
+-- Indeksy dla tabeli `employeesactions`
+--
+ALTER TABLE `employeesactions`
+  ADD PRIMARY KEY (`id_akcji`);
 
 --
 -- Indeksy dla tabeli `orders`
@@ -177,19 +201,19 @@ ALTER TABLE `products`
 -- AUTO_INCREMENT for table `customers`
 --
 ALTER TABLE `customers`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
-
---
--- AUTO_INCREMENT for table `employeeactions`
---
-ALTER TABLE `employeeactions`
-  MODIFY `ID_akcji` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- AUTO_INCREMENT for table `employees`
 --
 ALTER TABLE `employees`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
+-- AUTO_INCREMENT for table `employeesactions`
+--
+ALTER TABLE `employeesactions`
+  MODIFY `id_akcji` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- AUTO_INCREMENT for table `orders`
@@ -201,19 +225,11 @@ ALTER TABLE `orders`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- Constraints for dumped tables
 --
-
---
--- Constraints for table `employeeactions`
---
-ALTER TABLE `employeeactions`
-  ADD CONSTRAINT `employeeactions_ibfk_1` FOREIGN KEY (`ID_Pracownika`) REFERENCES `employees` (`ID`),
-  ADD CONSTRAINT `employeeactions_ibfk_2` FOREIGN KEY (`ID_produktu`) REFERENCES `products` (`ID`),
-  ADD CONSTRAINT `employeeactions_ibfk_3` FOREIGN KEY (`ID_klienta`) REFERENCES `customers` (`ID`);
 
 --
 -- Constraints for table `orders`
